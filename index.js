@@ -6,7 +6,7 @@ const text = require('./const')
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
 bot.start((ctx) => {
-    ctx.reply(`Salom ${ctx.message.from.first_name ? ctx.message.from.first_name : 'Noma\'lum shaxs'} to\'nka!`)
+    ctx.reply(`Salom ${ctx.message.from.first_name ? ctx.message.from.first_name : 'Noma\'lum shaxs'}!`)
     console.log(ctx.message);
 })
 
